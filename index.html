@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uçak Takip Uygulaması</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+</head>
+<body>
+    <header>
+        <h1>Uçak Takip Uygulaması</h1>
+        <nav>
+            <ul>
+                <li><a href="#list" id="listTab" class="active">Liste</a></li>
+                <li><a href="#map" id="mapTab">Harita</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="list" class="tab-content">
+        <h2>Uçaklar Listesi</h2>
+        <table id="aircraftTable">
+            <thead>
+                <tr>
+                    <th>Uçak Kuyruk Kodu</th>
+                    <th>Pozisyon</th>
+                    <th>Geliş Saati</th>
+                    <th>Arıza Açıklaması</th>
+                    <th>Gidiş Tarihi</th>
+                    <th>Çalışan Ekip</th>
+                    <th>Durum</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Uçak listesi burada dinamik olarak yüklenecek -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="map" class="tab-content">
+        <h2>Harita</h2>
+        <div id="mapCanvas" style="height: 400px;"></div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
